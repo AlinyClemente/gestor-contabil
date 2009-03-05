@@ -109,6 +109,11 @@ public class MenuInicial extends javax.swing.JFrame {
         menuCadastro.setText("Cadastro");
 
         mitemClientes.setText("Clientes");
+        mitemClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mitemClientesActionPerformed(evt);
+            }
+        });
         menuCadastro.add(mitemClientes);
 
         mitemFornecedores.setText("Fornecedores");
@@ -185,14 +190,15 @@ public class MenuInicial extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 632, Short.MAX_VALUE)
+            .addGap(0, 1016, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 351, Short.MAX_VALUE)
+            .addGap(0, 645, Short.MAX_VALUE)
         );
 
-        pack();
+        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+        setBounds((screenSize.width-1024)/2, (screenSize.height-700)/2, 1024, 700);
     }// </editor-fold>//GEN-END:initComponents
 
     private void mitemEmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitemEmpresaActionPerformed
@@ -252,6 +258,12 @@ public class MenuInicial extends javax.swing.JFrame {
     private void mitemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitemSairActionPerformed
         System.exit(0);
     }//GEN-LAST:event_mitemSairActionPerformed
+
+    private void mitemClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitemClientesActionPerformed
+        FrameCadastroCliente fc = new FrameCadastroCliente();
+        desktop.add(fc);
+        fc.setVisible(true);
+    }//GEN-LAST:event_mitemClientesActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {

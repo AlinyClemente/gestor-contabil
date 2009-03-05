@@ -83,7 +83,7 @@ public class FrameSobre extends ModalInternalFrame {
                     .addComponent(lblEmpresa))
                 .addGap(43, 43, 43)
                 .addComponent(btnOK)
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
 
         pack();
