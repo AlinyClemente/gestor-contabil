@@ -4,12 +4,38 @@ import boleto.org.jboleto.JBoleto;
 import boleto.org.jboleto.JBoletoBean;
 import boleto.org.jboleto.bancos.Itau;
 import boleto.org.jboleto.control.PDFGenerator;
+import java.awt.Color;
 import java.awt.Desktop;
 import java.io.File;
 import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JDesktopPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 public class MenuInicial extends javax.swing.JFrame {
 
+    private JDesktopPane desktop;
+
     public MenuInicial() {
+        try {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(MenuInicial.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            Logger.getLogger(MenuInicial.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            Logger.getLogger(MenuInicial.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(MenuInicial.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        // seta o contentPane do JFrame, assim teremos suporte a JInternalFrame.
+        desktop = new JDesktopPane();
+        desktop.setBackground(Color.LIGHT_GRAY);
+        this.setContentPane(desktop);
+        desktop.setDragMode(JDesktopPane.OUTLINE_DRAG_MODE);
+
         initComponents();
     }
 
@@ -31,6 +57,7 @@ public class MenuInicial extends javax.swing.JFrame {
         mitemClientes = new javax.swing.JMenuItem();
         mitemFornecedores = new javax.swing.JMenuItem();
         mitemProdutos = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JSeparator();
         mitemContasCorrentes = new javax.swing.JMenuItem();
         mitemBancos = new javax.swing.JMenuItem();
         menuEditar = new javax.swing.JMenu();
@@ -70,6 +97,11 @@ public class MenuInicial extends javax.swing.JFrame {
         menuArquivo.add(mitemBackup);
 
         mitemSair.setText("Sair");
+        mitemSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mitemSairActionPerformed(evt);
+            }
+        });
         menuArquivo.add(mitemSair);
 
         jMenuBar1.add(menuArquivo);
@@ -84,6 +116,7 @@ public class MenuInicial extends javax.swing.JFrame {
 
         mitemProdutos.setText("Produtos");
         menuCadastro.add(mitemProdutos);
+        menuCadastro.add(jSeparator1);
 
         mitemContasCorrentes.setText("Contas Correntes");
         menuCadastro.add(mitemContasCorrentes);
@@ -127,11 +160,21 @@ public class MenuInicial extends javax.swing.JFrame {
         jMenuBar1.add(menuRelatorios);
 
         menuAjuda.setText("Ajuda");
+        menuAjuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuAjudaActionPerformed(evt);
+            }
+        });
 
         mitemAjuda.setText("Ajuda");
         menuAjuda.add(mitemAjuda);
 
         mitemSobre.setText("Sobre");
+        mitemSobre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mitemSobreActionPerformed(evt);
+            }
+        });
         menuAjuda.add(mitemSobre);
 
         jMenuBar1.add(menuAjuda);
@@ -177,23 +220,38 @@ public class MenuInicial extends javax.swing.JFrame {
         Vector descr = new Vector();
         descr.add("gfdg");
         jbean.setDescricoes(descr);
-        PDFGenerator pdf = new PDFGenerator(jbean, JBoleto.ITAU);
+        PDFGenerator pdf = new PDFGenerator(jbean, JBoleto.BANCO_DO_BRASIL);
         pdf.addBoleto(jbean, new Itau(jbean));
-        JBoleto jbol = new JBoleto(pdf, jbean, JBoleto.ITAU);
+        JBoleto jbol = new JBoleto(pdf, jbean, JBoleto.BANCO_DO_BRASIL);
         jbol.closeBoleto("c:/caixa.pdf");
-        try{
+        try {
             File arq = new File("c:/caixa.pdf");
             Desktop desk = Desktop.getDesktop();
             desk.open(arq);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
     }//GEN-LAST:event_mitemEmpresaActionPerformed
-    
+
     private void menuArquivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuArquivoActionPerformed
         System.exit(0);
     }//GEN-LAST:event_menuArquivoActionPerformed
+
+    private void mitemSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitemSobreActionPerformed
+        FrameSobre s = new FrameSobre();
+        desktop.add(s);
+        s.setModal(true);
+        s.setVisible(true);
+    }//GEN-LAST:event_mitemSobreActionPerformed
+
+    private void menuAjudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAjudaActionPerformed
+        
+    }//GEN-LAST:event_menuAjudaActionPerformed
+
+    private void mitemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitemSairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_mitemSairActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -206,6 +264,7 @@ public class MenuInicial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JMenu menuAjuda;
     private javax.swing.JMenu menuArquivo;
     private javax.swing.JMenu menuCadastro;
