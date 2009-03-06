@@ -40,11 +40,12 @@
                           <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ftxtTelefoneComercial" alignment="1" min="-2" pref="114" max="-2" attributes="0"/>
-                          <Component id="ftxtTelefoneResidencial" alignment="1" min="-2" pref="114" max="-2" attributes="0"/>
-                          <Component id="ftxtTelefoneCelular" alignment="1" min="-2" pref="114" max="-2" attributes="0"/>
-                          <Component id="ftxtFax" alignment="1" min="-2" pref="114" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="formattedTextEmail1" max="32767" attributes="1"/>
+                          <Component id="ftxtTelefoneComercial" alignment="0" pref="114" max="32767" attributes="1"/>
+                          <Component id="ftxtTelefoneResidencial" alignment="0" pref="114" max="32767" attributes="1"/>
+                          <Component id="ftxtTelefoneCelular" alignment="0" pref="114" max="32767" attributes="1"/>
+                          <Component id="ftxtFax" alignment="0" pref="114" max="32767" attributes="1"/>
                       </Group>
                   </Group>
               </Group>
@@ -84,10 +85,13 @@
                           <Component id="lblFax" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lblEmail" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="formattedTextEmail1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="183" max="32767" attributes="0"/>
+              <EmptySpace pref="187" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -403,6 +407,8 @@
         </Property>
         <Property name="text" type="java.lang.String" value="E-mail:"/>
       </Properties>
+    </Component>
+    <Component class="componentes.FormattedTextEmail" name="formattedTextEmail1">
     </Component>
   </SubComponents>
 </Form>
