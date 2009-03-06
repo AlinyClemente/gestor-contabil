@@ -1,18 +1,15 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package componentes;
 
-import java.text.Format;
 import java.text.ParseException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFormattedTextField;
 import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
 
 /**
  *
- * @author Andre Luis
+ * @author Táizel Girão
  */
 public class FormattedTextDataOpcional extends JFormattedTextField {
 
@@ -22,28 +19,8 @@ public class FormattedTextDataOpcional extends JFormattedTextField {
             MaskFormatter mask = new MaskFormatter("**/**/****");
             mask.setValidCharacters(" 0123456789");
             setFormatterFactory(new DefaultFormatterFactory(mask));
-        } catch (ParseException p) {
+        } catch (ParseException ex) {
+            Logger.getLogger(FormattedTextDataObrigatoria.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
-    public FormattedTextDataOpcional(AbstractFormatterFactory factory, Object currentValue) {
-        super(factory, currentValue);
-    }
-
-    public FormattedTextDataOpcional(AbstractFormatterFactory factory) {
-        super(factory);
-    }
-
-    public FormattedTextDataOpcional(AbstractFormatter formatter) {
-        super(formatter);
-    }
-
-    public FormattedTextDataOpcional(Format format) {
-        super(format);
-    }
-
-    public FormattedTextDataOpcional(Object value) {
-        super(value);
-    }
-
 }
