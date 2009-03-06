@@ -56,6 +56,7 @@ public class FrameCadastroCliente extends ModalInternalFrame {
         lblFax = new javax.swing.JLabel();
         ftxtFax = new componentes.FormattedTextTelefone();
         lblEmail = new javax.swing.JLabel();
+        formattedTextEmail1 = new componentes.FormattedTextEmail();
 
         setTitle("Cadastro de Cliente - Gestor Contábil");
 
@@ -65,10 +66,10 @@ public class FrameCadastroCliente extends ModalInternalFrame {
         lblCPF1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblCPF1.setText("CPF:");
 
-        lblRG1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblRG1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblRG1.setText("RG:");
 
-        lblSexo1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblSexo1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblSexo1.setText("Sexo:"); // NOI18N
 
         try {
@@ -87,16 +88,16 @@ public class FrameCadastroCliente extends ModalInternalFrame {
         lblNomeMae1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblNomeMae1.setText("Filiação (Nome da Mãe):");
 
-        lblNomePai1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblNomePai1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblNomePai1.setText("Filiação (Nome do Pai):");
 
-        lblNome1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblNome1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblNome1.setText("Nome:"); // NOI18N
 
         lblDataNascimento1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblDataNascimento1.setText("Data de Nascimento:"); // NOI18N
 
-        lblDadosPessoais1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblDadosPessoais1.setFont(new java.awt.Font("Dialog", 1, 14));
         lblDadosPessoais1.setText("Dados Pessoais");
 
         javax.swing.GroupLayout pnlDadosPessoaisLayout = new javax.swing.GroupLayout(pnlDadosPessoais);
@@ -209,22 +210,22 @@ public class FrameCadastroCliente extends ModalInternalFrame {
                 .addGap(23, 23, 23))
         );
 
-        lblDadosContato.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblDadosContato.setFont(new java.awt.Font("Dialog", 1, 14));
         lblDadosContato.setText("Dados de Contato");
 
-        lblTelefoneResidencial.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblTelefoneResidencial.setFont(new java.awt.Font("Dialog", 1, 11));
         lblTelefoneResidencial.setText("Telefone Residencial:");
 
-        lblTelefoneComercial.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblTelefoneComercial.setFont(new java.awt.Font("Dialog", 1, 11));
         lblTelefoneComercial.setText("Telefone Comercial:");
 
-        lblTelefoneComercial1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblTelefoneComercial1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblTelefoneComercial1.setText("Telefone Celular:");
 
-        lblFax.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblFax.setFont(new java.awt.Font("Dialog", 1, 11));
         lblFax.setText("Fax");
 
-        lblEmail.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblEmail.setFont(new java.awt.Font("Dialog", 1, 11));
         lblEmail.setText("E-mail:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -247,11 +248,12 @@ public class FrameCadastroCliente extends ModalInternalFrame {
                             .addComponent(lblFax)
                             .addComponent(lblEmail))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ftxtTelefoneComercial, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ftxtTelefoneResidencial, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ftxtTelefoneCelular, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ftxtFax, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(formattedTextEmail1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ftxtTelefoneComercial, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
+                            .addComponent(ftxtTelefoneResidencial, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
+                            .addComponent(ftxtTelefoneCelular, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
+                            .addComponent(ftxtFax, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE))))
                 .addGap(43, 43, 43))
         );
         layout.setVerticalGroup(
@@ -281,8 +283,10 @@ public class FrameCadastroCliente extends ModalInternalFrame {
                             .addComponent(ftxtFax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblFax))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblEmail)))
-                .addContainerGap(183, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblEmail)
+                            .addComponent(formattedTextEmail1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
 
         pack();
@@ -292,6 +296,7 @@ public class FrameCadastroCliente extends ModalInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private componentes.ComboBoxEstadoCivil cmbEstadoCivil1;
     private componentes.ComboBoxSexo comboBoxSexo2;
+    private componentes.FormattedTextEmail formattedTextEmail1;
     private componentes.FormattedTextCPF ftxtCPF1;
     private componentes.FormattedTextDataObrigatoria ftxtDataNascimento1;
     private componentes.FormattedTextTelefone ftxtFax;
