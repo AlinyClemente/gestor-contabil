@@ -1,5 +1,9 @@
 package janelas;
 
+import java.text.ParseException;
+import javax.swing.text.DefaultFormatterFactory;
+import javax.swing.text.MaskFormatter;
+
 /**
  *
  * @author Táizel Girão
@@ -9,8 +13,8 @@ public class FrameCadastroCliente extends ModalInternalFrame {
     /** Creates new form FrameCadastroCliente */
     public FrameCadastroCliente() {
         initComponents();
+  
     }
-
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -25,17 +29,40 @@ public class FrameCadastroCliente extends ModalInternalFrame {
         cmbSexo = new javax.swing.JComboBox();
         lblNome = new javax.swing.JLabel();
         lblDataNascimento = new javax.swing.JLabel();
+        lblRG = new javax.swing.JLabel();
+        ftxtRG = new javax.swing.JFormattedTextField();
+        lblOrgaoEmissor = new javax.swing.JLabel();
+        txtOrgaoEmissor = new javax.swing.JTextField();
+        lblOrgaoEmissor1 = new javax.swing.JLabel();
+        ftxtCPF1 = new componentes.FormattedTextCPF();
+        formattedTextDataObrigatoria1 = new componentes.FormattedTextDataObrigatoria();
 
         setTitle("Cadastro de Cliente - Gestor Contábil");
 
-        lblSexo.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblSexo.setFont(new java.awt.Font("Dialog", 1, 11));
         lblSexo.setText("Sexo:"); // NOI18N
 
-        lblNome.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblNome.setFont(new java.awt.Font("Dialog", 1, 11));
         lblNome.setText("Nome:"); // NOI18N
 
-        lblDataNascimento.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblDataNascimento.setFont(new java.awt.Font("Dialog", 1, 11));
         lblDataNascimento.setText("Data de Nascimento:"); // NOI18N
+
+        lblRG.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblRG.setText("RG:");
+
+        try {
+            MaskFormatter mask = new MaskFormatter("****************");
+            mask.setValidCharacters(" 0123456789");
+            ftxtRG.setFormatterFactory(new DefaultFormatterFactory(mask));
+        } catch (ParseException p) {
+        }
+
+        lblOrgaoEmissor.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblOrgaoEmissor.setText("Orgão Emissor:");
+
+        lblOrgaoEmissor1.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblOrgaoEmissor1.setText("CPF:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -43,31 +70,59 @@ public class FrameCadastroCliente extends ModalInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblSexo))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblSexo)
+                                .addComponent(lblRG))
+                            .addGap(34, 34, 34)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(ftxtRG, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(cmbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(33, 33, 33)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblDataNascimento)
+                                .addComponent(lblOrgaoEmissor))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtOrgaoEmissor, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                                .addComponent(formattedTextDataObrigatoria1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(33, 33, 33)
+                .addComponent(lblOrgaoEmissor1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(cmbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblDataNascimento))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(469, 469, 469))
+                .addComponent(ftxtCPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(388, 388, 388))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblSexo)
+                            .addComponent(cmbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblDataNascimento)
+                            .addComponent(formattedTextDataObrigatoria1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(lblNome))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblSexo)
-                    .addComponent(cmbSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblDataNascimento))
-                .addContainerGap(319, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(ftxtRG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblRG)
+                        .addComponent(lblOrgaoEmissor)
+                        .addComponent(txtOrgaoEmissor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblOrgaoEmissor1)
+                        .addComponent(ftxtCPF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(261, Short.MAX_VALUE))
         );
 
         pack();
@@ -76,10 +131,17 @@ public class FrameCadastroCliente extends ModalInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox cmbSexo;
+    private componentes.FormattedTextDataObrigatoria formattedTextDataObrigatoria1;
+    private componentes.FormattedTextCPF ftxtCPF1;
+    private javax.swing.JFormattedTextField ftxtRG;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblDataNascimento;
     private javax.swing.JLabel lblNome;
+    private javax.swing.JLabel lblOrgaoEmissor;
+    private javax.swing.JLabel lblOrgaoEmissor1;
+    private javax.swing.JLabel lblRG;
     private javax.swing.JLabel lblSexo;
+    private javax.swing.JTextField txtOrgaoEmissor;
     // End of variables declaration//GEN-END:variables
 
 }
