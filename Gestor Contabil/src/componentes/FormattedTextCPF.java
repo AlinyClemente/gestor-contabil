@@ -2,8 +2,9 @@ package componentes;
 
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
-import java.text.Format;
 import java.text.ParseException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFormattedTextField;
 import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
@@ -14,47 +15,25 @@ import javax.swing.text.MaskFormatter;
  */
 public class FormattedTextCPF extends JFormattedTextField {
 
-    FocusListener focus = new FocusListener() {
-
-        public void focusGained(FocusEvent e) {
-
-        }
-
-        public void focusLost(FocusEvent e) {
-           if(!validarCPF()){
-               setValue(null);
-           }
-        }
-    };
-
     public FormattedTextCPF() {
         super();
         try {
             MaskFormatter mask = new MaskFormatter("###.###.###-##");
             setFormatterFactory(new DefaultFormatterFactory(mask));
-            addFocusListener(focus);
-        } catch (ParseException p) {
+            addFocusListener(new FocusListener() {
+
+                public void focusGained(FocusEvent e) {
+                }
+
+                public void focusLost(FocusEvent e) {
+                    if (!validarCPF()) {
+                        setValue(null);
+                    }
+                }
+            });
+        } catch (ParseException ex) {
+            Logger.getLogger(FormattedTextCPF.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
-
-    public FormattedTextCPF(AbstractFormatterFactory factory, Object currentValue) {
-        super(factory, currentValue);
-    }
-
-    public FormattedTextCPF(AbstractFormatterFactory factory) {
-        super(factory);
-    }
-
-    public FormattedTextCPF(AbstractFormatter formatter) {
-        super(formatter);
-    }
-
-    public FormattedTextCPF(Format format) {
-        super(format);
-    }
-
-    public FormattedTextCPF(Object value) {
-        super(value);
     }
 
     //Checa a validade de um CPF.
@@ -103,5 +82,4 @@ public class FormattedTextCPF extends JFormattedTextField {
             return false;
         }
     }
-
 }
