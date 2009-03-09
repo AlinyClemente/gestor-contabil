@@ -57,16 +57,31 @@ public class FrameCadastroCliente extends ModalInternalFrame {
         ftxtFax = new componentes.FormattedTextTelefone();
         lblEmail = new javax.swing.JLabel();
         formattedTextEmail1 = new componentes.FormattedTextEmail();
+        lblEndereco = new javax.swing.JLabel();
+        lblEnd = new javax.swing.JLabel();
+        txtEndereco = new javax.swing.JTextField();
+        lblNumero = new javax.swing.JLabel();
+        txtNumero = new javax.swing.JFormattedTextField();
+        lblNumero1 = new javax.swing.JLabel();
+        txtComplemento = new javax.swing.JFormattedTextField();
+        lblCEP = new javax.swing.JLabel();
+        ftxtCEP = new componentes.FormattedTextCEP();
+        lblBairro = new javax.swing.JLabel();
+        txtBairro = new javax.swing.JFormattedTextField();
+        lblEstado = new javax.swing.JLabel();
+        cmbEstado = new javax.swing.JComboBox();
+        lblCEP1 = new javax.swing.JLabel();
+        txtCidade = new javax.swing.JTextField();
 
         setTitle("Cadastro de Cliente - Gestor Contábil");
 
-        lblNomeConjuge1.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblNomeConjuge1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         lblNomeConjuge1.setText("Nome da Conjuge:");
 
         lblCPF1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblCPF1.setText("CPF:");
 
-        lblRG1.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblRG1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         lblRG1.setText("RG:");
 
         lblSexo1.setFont(new java.awt.Font("Dialog", 1, 11));
@@ -82,22 +97,22 @@ public class FrameCadastroCliente extends ModalInternalFrame {
         lblEstadoCivil1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblEstadoCivil1.setText("Estado Civil:");
 
-        lblOrgaoEmissor1.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblOrgaoEmissor1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         lblOrgaoEmissor1.setText("Orgão Emissor:");
 
-        lblNomeMae1.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblNomeMae1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         lblNomeMae1.setText("Filiação (Nome da Mãe):");
 
-        lblNomePai1.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblNomePai1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         lblNomePai1.setText("Filiação (Nome do Pai):");
 
-        lblNome1.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblNome1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         lblNome1.setText("Nome:"); // NOI18N
 
-        lblDataNascimento1.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblDataNascimento1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         lblDataNascimento1.setText("Data de Nascimento:"); // NOI18N
 
-        lblDadosPessoais1.setFont(new java.awt.Font("Dialog", 1, 14));
+        lblDadosPessoais1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         lblDadosPessoais1.setText("Dados Pessoais");
 
         javax.swing.GroupLayout pnlDadosPessoaisLayout = new javax.swing.GroupLayout(pnlDadosPessoais);
@@ -124,8 +139,8 @@ public class FrameCadastroCliente extends ModalInternalFrame {
                         .addGroup(pnlDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlDadosPessoaisLayout.createSequentialGroup()
                                 .addComponent(lblNomeConjuge1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtNomePai3, javax.swing.GroupLayout.DEFAULT_SIZE, 312, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                                .addComponent(txtNomePai3, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlDadosPessoaisLayout.createSequentialGroup()
                                 .addGroup(pnlDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lblNomeMae1)
@@ -141,9 +156,9 @@ public class FrameCadastroCliente extends ModalInternalFrame {
                                     .addComponent(lblSexo1))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(pnlDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(comboBoxSexo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(ftxtRG, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ftxtCPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(ftxtCPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(comboBoxSexo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                                 .addGroup(pnlDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlDadosPessoaisLayout.createSequentialGroup()
@@ -210,7 +225,7 @@ public class FrameCadastroCliente extends ModalInternalFrame {
                 .addGap(23, 23, 23))
         );
 
-        lblDadosContato.setFont(new java.awt.Font("Dialog", 1, 14));
+        lblDadosContato.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         lblDadosContato.setText("Dados de Contato");
 
         lblTelefoneResidencial.setFont(new java.awt.Font("Dialog", 1, 11));
@@ -227,6 +242,51 @@ public class FrameCadastroCliente extends ModalInternalFrame {
 
         lblEmail.setFont(new java.awt.Font("Dialog", 1, 11));
         lblEmail.setText("E-mail:");
+
+        lblEndereco.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblEndereco.setText("Endereco");
+
+        lblEnd.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblEnd.setText("Endereço:"); // NOI18N
+
+        lblNumero.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblNumero.setText("Número:");
+
+        try {
+            MaskFormatter mask = new MaskFormatter("****************");
+            mask.setValidCharacters(" 0123456789");
+            ftxtRG.setFormatterFactory(new DefaultFormatterFactory(mask));
+        } catch (ParseException p) {
+        }
+
+        lblNumero1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblNumero1.setText("Complemento:");
+
+        try {
+            MaskFormatter mask = new MaskFormatter("****************");
+            mask.setValidCharacters(" 0123456789");
+            ftxtRG.setFormatterFactory(new DefaultFormatterFactory(mask));
+        } catch (ParseException p) {
+        }
+
+        lblCEP.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblCEP.setText("CEP:");
+
+        lblBairro.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblBairro.setText("Bairro:");
+
+        try {
+            MaskFormatter mask = new MaskFormatter("****************");
+            mask.setValidCharacters(" 0123456789");
+            ftxtRG.setFormatterFactory(new DefaultFormatterFactory(mask));
+        } catch (ParseException p) {
+        }
+
+        lblEstado.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblEstado.setText("Estado:");
+
+        lblCEP1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblCEP1.setText("Cidade:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -255,6 +315,45 @@ public class FrameCadastroCliente extends ModalInternalFrame {
                             .addComponent(ftxtTelefoneCelular, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
                             .addComponent(ftxtFax, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE))))
                 .addGap(43, 43, 43))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(199, 199, 199)
+                .addComponent(lblEndereco)
+                .addContainerGap(517, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(txtEndereco, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(lblEnd)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 362, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblBairro)
+                            .addComponent(lblNumero)
+                            .addComponent(lblEstado))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(txtNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cmbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblCEP1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblCEP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblNumero1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtCidade)
+                            .addComponent(ftxtCEP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtComplemento, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE))))
+                .addGap(346, 346, 346))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -286,17 +385,45 @@ public class FrameCadastroCliente extends ModalInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblEmail)
                             .addComponent(formattedTextEmail1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblEndereco)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblEnd)
+                    .addComponent(txtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNumero)
+                    .addComponent(txtComplemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNumero1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ftxtCEP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCEP)
+                    .addComponent(lblBairro))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cmbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblEstado)
+                    .addComponent(txtCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCEP1))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
+
+        getAccessibleContext().setAccessibleName("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox cmbEstado;
     private componentes.ComboBoxEstadoCivil cmbEstadoCivil1;
     private componentes.ComboBoxSexo comboBoxSexo2;
     private componentes.FormattedTextEmail formattedTextEmail1;
+    private componentes.FormattedTextCEP ftxtCEP;
     private componentes.FormattedTextCPF ftxtCPF1;
     private componentes.FormattedTextDataObrigatoria ftxtDataNascimento1;
     private componentes.FormattedTextTelefone ftxtFax;
@@ -304,17 +431,25 @@ public class FrameCadastroCliente extends ModalInternalFrame {
     private componentes.FormattedTextTelefone ftxtTelefoneCelular;
     private componentes.FormattedTextTelefone ftxtTelefoneComercial;
     private componentes.FormattedTextTelefone ftxtTelefoneResidencial;
+    private javax.swing.JLabel lblBairro;
+    private javax.swing.JLabel lblCEP;
+    private javax.swing.JLabel lblCEP1;
     private javax.swing.JLabel lblCPF1;
     private javax.swing.JLabel lblDadosContato;
     private javax.swing.JLabel lblDadosPessoais1;
     private javax.swing.JLabel lblDataNascimento1;
     private javax.swing.JLabel lblEmail;
+    private javax.swing.JLabel lblEnd;
+    private javax.swing.JLabel lblEndereco;
+    private javax.swing.JLabel lblEstado;
     private javax.swing.JLabel lblEstadoCivil1;
     private javax.swing.JLabel lblFax;
     private javax.swing.JLabel lblNome1;
     private javax.swing.JLabel lblNomeConjuge1;
     private javax.swing.JLabel lblNomeMae1;
     private javax.swing.JLabel lblNomePai1;
+    private javax.swing.JLabel lblNumero;
+    private javax.swing.JLabel lblNumero1;
     private javax.swing.JLabel lblOrgaoEmissor1;
     private javax.swing.JLabel lblRG1;
     private javax.swing.JLabel lblSexo1;
@@ -322,10 +457,15 @@ public class FrameCadastroCliente extends ModalInternalFrame {
     private javax.swing.JLabel lblTelefoneComercial1;
     private javax.swing.JLabel lblTelefoneResidencial;
     private javax.swing.JPanel pnlDadosPessoais;
+    private javax.swing.JFormattedTextField txtBairro;
+    private javax.swing.JTextField txtCidade;
+    private javax.swing.JFormattedTextField txtComplemento;
+    private javax.swing.JTextField txtEndereco;
     private javax.swing.JTextField txtNome1;
     private javax.swing.JTextField txtNomeMae1;
     private javax.swing.JTextField txtNomePai2;
     private javax.swing.JTextField txtNomePai3;
+    private javax.swing.JFormattedTextField txtNumero;
     private javax.swing.JTextField txtOrgaoEmissor1;
     // End of variables declaration//GEN-END:variables
 
