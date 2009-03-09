@@ -1,5 +1,7 @@
 package janelas;
 
+import componentes.FormattedTextCNPJ;
+import componentes.FormattedTextCPF;
 /**
  *
  * @author Táizel Girão
@@ -22,47 +24,132 @@ public class FrameCadastroFornecedor extends ModalInternalFrame {
     private void initComponents() {
 
         grpTipo = new javax.swing.ButtonGroup();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        rdbFisica = new javax.swing.JRadioButton();
+        rdbJurifica = new javax.swing.JRadioButton();
+        lblClassificacao = new javax.swing.JLabel();
+        ftxtRegistro = new javax.swing.JFormattedTextField();
+        lblRegistro = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        lblRegistro1 = new javax.swing.JLabel();
 
-        grpTipo.add(jRadioButton1);
-        grpTipo.add(jRadioButton2);
+        grpTipo.add(rdbFisica);
+        grpTipo.add(rdbJurifica);
 
         setTitle("Cadastro de Fornecedor - Gestor Contábil");
 
-        jRadioButton1.setText("jRadioButton1");
+        rdbFisica.setText("Física");
+        rdbFisica.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                rdbFisicaItemStateChanged(evt);
+            }
+        });
 
-        jRadioButton2.setText("jRadioButton2");
+        rdbJurifica.setText("Jurídica");
+        rdbJurifica.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                rdbJurificaItemStateChanged(evt);
+            }
+        });
+
+        lblClassificacao.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        lblClassificacao.setText("Classificação:");
+
+        ftxtRegistro.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                validarRegistro(evt);
+            }
+        });
+
+        lblRegistro.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblRegistro.setText("CNPJ ou CPF:");
+
+        lblRegistro1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblRegistro1.setText("Inscrição Estadual:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(231, 231, 231)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2))
-                .addContainerGap(460, Short.MAX_VALUE))
+                .addGap(32, 32, 32)
+                .addComponent(lblClassificacao)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rdbJurifica)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rdbFisica)
+                .addGap(18, 18, 18)
+                .addComponent(lblRegistro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ftxtRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblRegistro1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(108, 108, 108))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(124, 124, 124)
-                .addComponent(jRadioButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton1)
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblClassificacao, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rdbJurifica)
+                    .addComponent(rdbFisica)
+                    .addComponent(lblRegistro)
+                    .addComponent(ftxtRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblRegistro1)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(344, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void rdbJurificaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_rdbJurificaItemStateChanged
+        if(rdbJurifica.isSelected()){
+            ftxtRegistro.setValue(null);
+            FormattedTextCNPJ f = new FormattedTextCNPJ();
+            ftxtRegistro.setFormatterFactory(f.getFormatterFactory());
+        }
+    }//GEN-LAST:event_rdbJurificaItemStateChanged
+
+    private void rdbFisicaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_rdbFisicaItemStateChanged
+        if(rdbFisica.isSelected()){
+            ftxtRegistro.setValue(null);
+            FormattedTextCPF f = new FormattedTextCPF();
+            ftxtRegistro.setFormatterFactory(f.getFormatterFactory());
+        }
+    }//GEN-LAST:event_rdbFisicaItemStateChanged
+
+    private void validarRegistro(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_validarRegistro
+        if(rdbJurifica.isSelected()){
+            FormattedTextCNPJ f = new FormattedTextCNPJ();
+            f.setText(ftxtRegistro.getText());
+            if(!f.validarCNPJ()){
+                ftxtRegistro.setValue(null);
+            }
+            return;
+        }
+        if(rdbFisica.isSelected()){
+            FormattedTextCPF f = new FormattedTextCPF();
+            f.setText(ftxtRegistro.getText());
+            if(!f.validarCPF()){
+                ftxtRegistro.setValue(null);
+            }
+            return;
+        }
+}//GEN-LAST:event_validarRegistro
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFormattedTextField ftxtRegistro;
     private javax.swing.ButtonGroup grpTipo;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lblClassificacao;
+    private javax.swing.JLabel lblRegistro;
+    private javax.swing.JLabel lblRegistro1;
+    private javax.swing.JRadioButton rdbFisica;
+    private javax.swing.JRadioButton rdbJurifica;
     // End of variables declaration//GEN-END:variables
 
 }
