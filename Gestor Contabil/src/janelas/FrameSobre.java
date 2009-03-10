@@ -14,8 +14,8 @@ public class FrameSobre extends ModalInternalFrame {
         
     }
 
-    /**Inicializa um FrameSobre e adiciona dentro do JDesktopPane recebido.*
-     * @param pane JDesktoPane no qual a instancia do FrameSobre será adicionado.
+    /**Retorna a instância atual de FrameSobre, se não existir nenhuma ele cria uma e a retorna.
+     * @return A instância atual de FrameSobre, se não existir nenhuma ele cria uma e a retorna.
      */
     public static FrameSobre getInstance() {
         if (frame == null) {
