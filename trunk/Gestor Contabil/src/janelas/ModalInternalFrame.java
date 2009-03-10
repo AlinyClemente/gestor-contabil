@@ -34,7 +34,7 @@ public class ModalInternalFrame extends JInternalFrame {
             }
         }
     }
-
+    /**Faz o componente ter um comportamento modal. */
     private synchronized void startModal() {
 
         try {
@@ -78,14 +78,18 @@ public class ModalInternalFrame extends JInternalFrame {
 
     }
 
+    /**Faz o componente parar de ter um comportamento modal.*/
     private synchronized void stopModal() {
         notifyAll();
     }
 
+    /**Seta o comportamento do componente para modal.*/
     public void setModal(boolean modal) {
         this.modal = modal;
     }
-
+    /**Indica se o comportamento do componente é modal.
+     * @return True se o componente é modal, se não retorna false.
+     */
     public boolean isModal() {
         return this.modal;
     }
