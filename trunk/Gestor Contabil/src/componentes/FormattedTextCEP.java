@@ -10,11 +10,11 @@ import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
 
 /**
- *
+ * Componente que consiste em um JFormattedTextField formatado para receber um cep válido.
  * @author Táizel Girão
  */
 public class FormattedTextCEP extends JFormattedTextField{
-
+    /**Construtor que inicializa o componente. */
     public FormattedTextCEP() {
         super();
         try {
@@ -38,7 +38,9 @@ public class FormattedTextCEP extends JFormattedTextField{
         }
     }
 
-    //Checa a validade de um telefone.
+    /**Captura o texto do componente através do método getText() e indica se ele é um cep válido.
+     * @return True se o texto no componente for um cep válido, se não retorna falso.
+     */
     public boolean validarCEP() {
         String tel = getText().replace("-", "");
         if (tel.length() == 8) {

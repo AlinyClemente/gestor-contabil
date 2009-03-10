@@ -7,11 +7,11 @@ import java.util.regex.Pattern;
 import javax.swing.JFormattedTextField;
 
 /**
- *
+ * Componente que consiste em um JFormattedTextField formatado para receber um e-mail válido.
  * @author Táizel Girão
  */
 public class FormattedTextEmail extends JFormattedTextField{
-
+    /**Construtor que inicializa o componente. */
     public FormattedTextEmail() {
         super();
         addFocusListener(new FocusListener() {
