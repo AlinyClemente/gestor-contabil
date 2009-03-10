@@ -14,11 +14,11 @@ import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
 
 /**
- *
+ * Componente que consiste em um JFormattedTextField formatado para receber um CNPJ válido.
  * @author Táizel Girão
  */
 public class FormattedTextCNPJ extends JFormattedTextField {
-
+    /**Construtor que inicializa o componente. */
     public FormattedTextCNPJ() {
         super();
         try {
@@ -41,7 +41,9 @@ public class FormattedTextCNPJ extends JFormattedTextField {
         }
     }
 
-
+    /**Captura o texto do componente através do método getText() e indica se ele é um CNPJ válido.
+     * @return True se o texto no componente for um CNPJ válido, se não retorna falso.
+     */
     public boolean validarCNPJ() {
         String s = getText().replace(".", "").replace("/", "").replace("-", "");
         if (s.length() == 14) {

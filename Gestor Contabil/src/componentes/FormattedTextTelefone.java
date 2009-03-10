@@ -10,11 +10,11 @@ import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
 
 /**
- *
+ * Componente que consiste em um JFormattedTextField formatado para receber um telefone válido.
  * @author Táizel Girão
  */
 public class FormattedTextTelefone extends JFormattedTextField {
-
+    /**Construtor que inicializa o componente. */
     public FormattedTextTelefone() {
         super();
         try {

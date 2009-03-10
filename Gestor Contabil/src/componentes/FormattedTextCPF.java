@@ -10,11 +10,11 @@ import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
 
 /**
- *
+ * Componente que consiste em um JFormattedTextField formatado para receber um CPF válido.
  * @author Táizel Girão
  */
 public class FormattedTextCPF extends JFormattedTextField {
-
+    /**Construtor que inicializa o componente. */
     public FormattedTextCPF() {
         super();
         try {
@@ -36,7 +36,9 @@ public class FormattedTextCPF extends JFormattedTextField {
         }
     }
 
-    //Checa a validade de um CPF.
+    /**Captura o texto do componente através do método getText() e indica se ele é um CPF válido.
+     * @return True se o texto no componente for um CPF válido, se não retorna falso.
+     */
     public boolean validarCPF() {
 //------- Rotina para CPF
         String cpf = getText().replaceAll("[.-]", "").replace(" ", "");

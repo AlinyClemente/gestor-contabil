@@ -10,11 +10,11 @@ import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
 
 /**
- *
+ * Componente que consiste em um JFormattedTextField formatado para receber obrigatoriamente um data válida.
  * @author Táizel Girão
  */
 public class FormattedTextDataObrigatoria extends JFormattedTextField{
-
+    /**Construtor que inicializa o componente. */
     public FormattedTextDataObrigatoria() {
         super();
         try {
@@ -38,7 +38,9 @@ public class FormattedTextDataObrigatoria extends JFormattedTextField{
         }
     }
 
-    //Checa a validade de uma data.
+    /**Captura o texto do componente através do método getText() e indica se ele é uma data válida.
+     * @return True se o texto no componente for uma data válida, se não retorna falso.
+     */
     public boolean validarData() {
         String dt = getText().replace("/", "").replace(" ", "");
 
