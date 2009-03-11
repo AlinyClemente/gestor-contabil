@@ -28,53 +28,53 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblStatusProduto" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                              <Component id="rdbAtivo" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                              <Component id="rdbInativo" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTipoProduto" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="1"/>
-                                  <Component id="jTextField4" alignment="0" min="-2" pref="234" max="-2" attributes="1"/>
+                                  <Component id="lblDescricao" alignment="0" min="-2" max="-2" attributes="1"/>
+                                  <Component id="txtDescricao" alignment="0" min="-2" pref="234" max="-2" attributes="1"/>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                           <Group type="102" alignment="0" attributes="1">
                                               <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
-                                              <Component id="jTextField10" max="32767" attributes="1"/>
+                                              <Component id="txtUltimaVenda" max="32767" attributes="1"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="1">
                                               <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
-                                              <Component id="jTextField7" max="32767" attributes="1"/>
+                                              <Component id="txtPesoLiquido" max="32767" attributes="1"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="jTextField8" alignment="0" max="32767" attributes="1"/>
-                                                  <Component id="jLabel12" alignment="0" max="32767" attributes="1"/>
-                                                  <Component id="jTextField5" alignment="0" max="32767" attributes="1"/>
-                                                  <Component id="jLabel9" alignment="0" max="32767" attributes="1"/>
+                                                  <Component id="txtPesoM" alignment="0" max="32767" attributes="1"/>
+                                                  <Component id="lblPesoM" alignment="0" max="32767" attributes="1"/>
+                                                  <Component id="txtUnidade" alignment="0" max="32767" attributes="1"/>
+                                                  <Component id="lblUnidade" alignment="0" max="32767" attributes="1"/>
                                               </Group>
                                               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                                       <Group type="102" alignment="1" attributes="0">
-                                                          <Component id="jTextField9" min="-2" pref="68" max="-2" attributes="1"/>
+                                                          <Component id="txtUltimaCompra" min="-2" pref="68" max="-2" attributes="1"/>
                                                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                                       </Group>
-                                                      <Component id="jLabel13" alignment="1" min="-2" max="-2" attributes="1"/>
+                                                      <Component id="lblUltimaCompra" alignment="1" min="-2" max="-2" attributes="1"/>
                                                   </Group>
-                                                  <Component id="jTextField6" alignment="0" min="-2" pref="68" max="-2" attributes="1"/>
-                                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="1"/>
+                                                  <Component id="txtPesoBruto" alignment="0" min="-2" pref="68" max="-2" attributes="1"/>
+                                                  <Component id="lblPesoBruto" alignment="0" min="-2" max="-2" attributes="1"/>
                                               </Group>
                                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="1"/>
-                                                  <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="1"/>
+                                                  <Component id="lblUltimaVenda" alignment="0" min="-2" max="-2" attributes="1"/>
+                                                  <Component id="lblPesoLiquido" alignment="0" min="-2" max="-2" attributes="1"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -82,34 +82,34 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rdbMateriaPrima" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rdbDiversos" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rdbProducaoPropria" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="jTextField3" alignment="0" max="32767" attributes="1"/>
+                      <Component id="txtLocalizacaoProduto" alignment="0" max="32767" attributes="1"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="jTextField1" alignment="0" max="32767" attributes="1"/>
-                              <Component id="jLabel5" alignment="0" max="32767" attributes="1"/>
-                              <Component id="jLabel3" alignment="0" max="32767" attributes="1"/>
-                              <Component id="formattedTextNumero1" alignment="0" max="32767" attributes="1"/>
+                              <Component id="txtCodigoFabricante" alignment="0" max="32767" attributes="1"/>
+                              <Component id="lblCodigoFabricante" alignment="0" max="32767" attributes="1"/>
+                              <Component id="lblCodigoProduto" alignment="0" max="32767" attributes="1"/>
+                              <Component id="ftxtCodigoProduto" alignment="0" max="32767" attributes="1"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="formattedTextNumero2" max="32767" attributes="1"/>
-                              <Component id="jLabel4" alignment="0" max="32767" attributes="1"/>
-                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="1"/>
-                              <Component id="jTextField2" alignment="0" max="32767" attributes="1"/>
+                              <Component id="txtCodigoBarra" max="32767" attributes="1"/>
+                              <Component id="lblCodigoBarra" alignment="0" max="32767" attributes="1"/>
+                              <Component id="lblNumeroSerie" alignment="0" min="-2" max="-2" attributes="1"/>
+                              <Component id="txtNumeroSerie" alignment="0" max="32767" attributes="1"/>
                           </Group>
                       </Group>
                   </Group>
-                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="1"/>
+                  <Component id="lblLocalizacaoProduto" alignment="0" min="-2" max="-2" attributes="1"/>
               </Group>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
           </Group>
@@ -120,94 +120,93 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblStatusProduto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTipoProduto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jRadioButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jRadioButton4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jRadioButton5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rdbAtivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rdbInativo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rdbMateriaPrima" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rdbDiversos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rdbProducaoPropria" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="formattedTextNumero1" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCodigoProduto" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ftxtCodigoProduto" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCodigoBarra" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCodigoFabricante" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblNumeroSerie" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="formattedTextNumero2" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="lblCodigoBarra" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCodigoFabricante" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNumeroSerie" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblLocalizacaoProduto" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtLocalizacaoProduto" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDescricao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jTextField4" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDescricao" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblUnidade" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jTextField5" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtUnidade" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPesoM" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jTextField8" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPesoM" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPesoBruto" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPesoLiquido" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField6" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPesoBruto" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblUltimaCompra" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtUltimaCompra" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Component id="jTextField7" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPesoLiquido" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblUltimaVenda" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtUltimaVenda" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="119" max="32767" attributes="0"/>
+              <EmptySpace pref="123" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="lblStatusProduto">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -215,17 +214,17 @@
         <Property name="text" type="java.lang.String" value="Status do Produto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+    <Component class="javax.swing.JRadioButton" name="rdbAtivo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ativo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+    <Component class="javax.swing.JRadioButton" name="rdbInativo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Inativo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="lblTipoProduto">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -233,22 +232,22 @@
         <Property name="text" type="java.lang.String" value="Tipo de produto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+    <Component class="javax.swing.JRadioButton" name="rdbMateriaPrima">
       <Properties>
         <Property name="text" type="java.lang.String" value="Mat&#xe9;ria Prima"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton4">
+    <Component class="javax.swing.JRadioButton" name="rdbDiversos">
       <Properties>
         <Property name="text" type="java.lang.String" value="Diversos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton5">
+    <Component class="javax.swing.JRadioButton" name="rdbProducaoPropria">
       <Properties>
         <Property name="text" type="java.lang.String" value="Produ&#xe7;&#xe3;o Pr&#xf3;pria"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="lblCodigoProduto">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -256,9 +255,9 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;digo do Produto"/>
       </Properties>
     </Component>
-    <Component class="componentes.FormattedTextNumero" name="formattedTextNumero1">
+    <Component class="componentes.FormattedTextNumero" name="ftxtCodigoProduto">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="lblCodigoBarra">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -266,9 +265,7 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;digo de Barra (EAN13)"/>
       </Properties>
     </Component>
-    <Component class="componentes.FormattedTextNumero" name="formattedTextNumero2">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="lblCodigoFabricante">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -276,9 +273,9 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;digo do Fabricante"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="txtCodigoFabricante">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="lblNumeroSerie">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -286,9 +283,9 @@
         <Property name="text" type="java.lang.String" value="N&#xfa;mero de S&#xe9;rie"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="txtNumeroSerie">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="lblLocalizacaoProduto">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -296,9 +293,9 @@
         <Property name="text" type="java.lang.String" value="Localiza&#xe7;&#xe3;o do Produto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="txtLocalizacaoProduto">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel13">
+    <Component class="javax.swing.JLabel" name="lblUltimaCompra">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -306,11 +303,11 @@
         <Property name="text" type="java.lang.String" value="&#xda;ltima Compra"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="txtDescricao">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField8">
+    <Component class="javax.swing.JTextField" name="txtPesoM">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel14">
+    <Component class="javax.swing.JLabel" name="lblUltimaVenda">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -318,12 +315,9 @@
         <Property name="text" type="java.lang.String" value="&#xda;ltima Venda"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField10">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField10ActionPerformed"/>
-      </Events>
+    <Component class="javax.swing.JTextField" name="txtUltimaVenda">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel12">
+    <Component class="javax.swing.JLabel" name="lblPesoM">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -331,11 +325,11 @@
         <Property name="text" type="java.lang.String" value="Peso m&#xb2;"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
+    <Component class="javax.swing.JTextField" name="txtUnidade">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField6">
+    <Component class="javax.swing.JTextField" name="txtPesoBruto">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
+    <Component class="javax.swing.JLabel" name="lblPesoLiquido">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -343,12 +337,9 @@
         <Property name="text" type="java.lang.String" value="Peso L&#xed;quido"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField7">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField7ActionPerformed"/>
-      </Events>
+    <Component class="javax.swing.JTextField" name="txtPesoLiquido">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
+    <Component class="javax.swing.JLabel" name="lblPesoBruto">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -356,7 +347,7 @@
         <Property name="text" type="java.lang.String" value="Peso Bruto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
+    <Component class="javax.swing.JLabel" name="lblDescricao">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
@@ -364,15 +355,17 @@
         <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField9">
+    <Component class="javax.swing.JTextField" name="txtUltimaCompra">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="lblUnidade">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="11" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Unidade"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCodigoBarra">
     </Component>
   </SubComponents>
 </Form>

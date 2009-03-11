@@ -31,104 +31,92 @@ public class FrameCadastroProduto extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jLabel2 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jLabel3 = new javax.swing.JLabel();
-        formattedTextNumero1 = new componentes.FormattedTextNumero();
-        jLabel4 = new javax.swing.JLabel();
-        formattedTextNumero2 = new componentes.FormattedTextNumero();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        lblStatusProduto = new javax.swing.JLabel();
+        rdbAtivo = new javax.swing.JRadioButton();
+        rdbInativo = new javax.swing.JRadioButton();
+        lblTipoProduto = new javax.swing.JLabel();
+        rdbMateriaPrima = new javax.swing.JRadioButton();
+        rdbDiversos = new javax.swing.JRadioButton();
+        rdbProducaoPropria = new javax.swing.JRadioButton();
+        lblCodigoProduto = new javax.swing.JLabel();
+        ftxtCodigoProduto = new componentes.FormattedTextNumero();
+        lblCodigoBarra = new javax.swing.JLabel();
+        lblCodigoFabricante = new javax.swing.JLabel();
+        txtCodigoFabricante = new javax.swing.JTextField();
+        lblNumeroSerie = new javax.swing.JLabel();
+        txtNumeroSerie = new javax.swing.JTextField();
+        lblLocalizacaoProduto = new javax.swing.JLabel();
+        txtLocalizacaoProduto = new javax.swing.JTextField();
+        lblUltimaCompra = new javax.swing.JLabel();
+        txtDescricao = new javax.swing.JTextField();
+        txtPesoM = new javax.swing.JTextField();
+        lblUltimaVenda = new javax.swing.JLabel();
+        txtUltimaVenda = new javax.swing.JTextField();
+        lblPesoM = new javax.swing.JLabel();
+        txtUnidade = new javax.swing.JTextField();
+        txtPesoBruto = new javax.swing.JTextField();
+        lblPesoLiquido = new javax.swing.JLabel();
+        txtPesoLiquido = new javax.swing.JTextField();
+        lblPesoBruto = new javax.swing.JLabel();
+        lblDescricao = new javax.swing.JLabel();
+        txtUltimaCompra = new javax.swing.JTextField();
+        lblUnidade = new javax.swing.JLabel();
+        txtCodigoBarra = new javax.swing.JTextField();
 
         setClosable(true);
         setTitle("Cadastro de Produto - Gestor Contábil");
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel1.setText("Status do Produto");
+        lblStatusProduto.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblStatusProduto.setText("Status do Produto");
 
-        jRadioButton1.setText("Ativo");
+        rdbAtivo.setText("Ativo");
 
-        jRadioButton2.setText("Inativo");
+        rdbInativo.setText("Inativo");
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel2.setText("Tipo de produto");
+        lblTipoProduto.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblTipoProduto.setText("Tipo de produto");
 
-        jRadioButton3.setText("Matéria Prima");
+        rdbMateriaPrima.setText("Matéria Prima");
 
-        jRadioButton4.setText("Diversos");
+        rdbDiversos.setText("Diversos");
 
-        jRadioButton5.setText("Produção Própria");
+        rdbProducaoPropria.setText("Produção Própria");
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel3.setText("Código do Produto");
+        lblCodigoProduto.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblCodigoProduto.setText("Código do Produto");
 
-        jLabel4.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel4.setText("Código de Barra (EAN13)");
+        lblCodigoBarra.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblCodigoBarra.setText("Código de Barra (EAN13)");
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel5.setText("Código do Fabricante");
+        lblCodigoFabricante.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblCodigoFabricante.setText("Código do Fabricante");
 
-        jLabel6.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel6.setText("Número de Série");
+        lblNumeroSerie.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblNumeroSerie.setText("Número de Série");
 
-        jLabel7.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel7.setText("Localização do Produto");
+        lblLocalizacaoProduto.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblLocalizacaoProduto.setText("Localização do Produto");
 
-        jLabel13.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel13.setText("Última Compra");
+        lblUltimaCompra.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblUltimaCompra.setText("Última Compra");
 
-        jLabel14.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel14.setText("Última Venda");
+        lblUltimaVenda.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblUltimaVenda.setText("Última Venda");
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
-            }
-        });
+        lblPesoM.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblPesoM.setText("Peso m²");
 
-        jLabel12.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel12.setText("Peso m²");
+        lblPesoLiquido.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblPesoLiquido.setText("Peso Líquido");
 
-        jLabel11.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel11.setText("Peso Líquido");
+        lblPesoBruto.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblPesoBruto.setText("Peso Bruto");
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
-            }
-        });
+        lblDescricao.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblDescricao.setText("Descrição");
 
-        jLabel10.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel10.setText("Peso Bruto");
-
-        jLabel8.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel8.setText("Descrição");
-
-        jLabel9.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jLabel9.setText("Unidade");
+        lblUnidade.setFont(new java.awt.Font("Dialog", 1, 11));
+        lblUnidade.setText("Unidade");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -139,67 +127,67 @@ public class FrameCadastroProduto extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
+                            .addComponent(lblStatusProduto)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jRadioButton1)
+                                .addComponent(rdbAtivo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jRadioButton2)))
+                                .addComponent(rdbInativo)))
                         .addGap(137, 137, 137)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
+                            .addComponent(lblTipoProduto)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblDescricao)
+                                    .addComponent(txtDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                                 .addGap(161, 161, 161)
-                                                .addComponent(jTextField10))
+                                                .addComponent(txtUltimaVenda))
                                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                                 .addGap(161, 161, 161)
-                                                .addComponent(jTextField7))
+                                                .addComponent(txtPesoLiquido))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(jTextField8)
-                                                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(jTextField5)
-                                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                    .addComponent(txtPesoM)
+                                                    .addComponent(lblPesoM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(txtUnidade)
+                                                    .addComponent(lblUnidade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                                 .addGap(24, 24, 24)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                         .addGroup(layout.createSequentialGroup()
-                                                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(txtUltimaCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                             .addGap(12, 12, 12))
-                                                        .addComponent(jLabel13))
-                                                    .addComponent(jTextField6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING))
+                                                        .addComponent(lblUltimaCompra))
+                                                    .addComponent(txtPesoBruto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(lblPesoBruto, javax.swing.GroupLayout.Alignment.LEADING))
                                                 .addGap(10, 10, 10)
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel14)
-                                                    .addComponent(jLabel11))))
+                                                    .addComponent(lblUltimaVenda)
+                                                    .addComponent(lblPesoLiquido))))
                                         .addGap(1, 1, 1)))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jRadioButton3)
+                                    .addComponent(rdbMateriaPrima)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jRadioButton4)
+                                    .addComponent(rdbDiversos)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jRadioButton5)))))
+                                    .addComponent(rdbProducaoPropria)))))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtLocalizacaoProduto, javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(formattedTextNumero1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(txtCodigoFabricante, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblCodigoFabricante, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblCodigoProduto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(ftxtCodigoProduto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(formattedTextNumero2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel6)
-                                .addComponent(jTextField2))))
-                    .addComponent(jLabel7))
+                                .addComponent(txtCodigoBarra)
+                                .addComponent(lblCodigoBarra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblNumeroSerie)
+                                .addComponent(txtNumeroSerie))))
+                    .addComponent(lblLocalizacaoProduto))
                 .addGap(30, 30, 30))
         );
         layout.setVerticalGroup(
@@ -207,118 +195,109 @@ public class FrameCadastroProduto extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblStatusProduto)
+                    .addComponent(lblTipoProduto))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton5))
+                    .addComponent(rdbAtivo)
+                    .addComponent(rdbInativo)
+                    .addComponent(rdbMateriaPrima)
+                    .addComponent(rdbDiversos)
+                    .addComponent(rdbProducaoPropria))
                 .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(formattedTextNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblCodigoProduto)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel6)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                    .addComponent(ftxtCodigoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCodigoBarra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(formattedTextNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblCodigoFabricante)
+                                    .addComponent(lblNumeroSerie)))
+                            .addComponent(lblCodigoBarra))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtCodigoFabricante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNumeroSerie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel7)
+                        .addComponent(lblLocalizacaoProduto)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtLocalizacaoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel8)
+                            .addComponent(lblDescricao)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel9)
+                            .addComponent(lblUnidade)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel12)
+                            .addComponent(lblPesoM)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtPesoM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel10)
-                                .addComponent(jLabel11))
+                                .addComponent(lblPesoBruto)
+                                .addComponent(lblPesoLiquido))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPesoBruto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel13)
+                                    .addComponent(lblUltimaCompra)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtUltimaCompra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(6, 6, 6)
-                                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPesoLiquido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel14)
+                                    .addComponent(lblUltimaVenda)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(119, Short.MAX_VALUE))
+                                    .addComponent(txtUltimaVenda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(123, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        // TODO add your handling code here:
-}//GEN-LAST:event_jTextField10ActionPerformed
-
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-}//GEN-LAST:event_jTextField7ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private componentes.FormattedTextNumero formattedTextNumero1;
-    private componentes.FormattedTextNumero formattedTextNumero2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private componentes.FormattedTextNumero ftxtCodigoProduto;
+    private javax.swing.JLabel lblCodigoBarra;
+    private javax.swing.JLabel lblCodigoFabricante;
+    private javax.swing.JLabel lblCodigoProduto;
+    private javax.swing.JLabel lblDescricao;
+    private javax.swing.JLabel lblLocalizacaoProduto;
+    private javax.swing.JLabel lblNumeroSerie;
+    private javax.swing.JLabel lblPesoBruto;
+    private javax.swing.JLabel lblPesoLiquido;
+    private javax.swing.JLabel lblPesoM;
+    private javax.swing.JLabel lblStatusProduto;
+    private javax.swing.JLabel lblTipoProduto;
+    private javax.swing.JLabel lblUltimaCompra;
+    private javax.swing.JLabel lblUltimaVenda;
+    private javax.swing.JLabel lblUnidade;
+    private javax.swing.JRadioButton rdbAtivo;
+    private javax.swing.JRadioButton rdbDiversos;
+    private javax.swing.JRadioButton rdbInativo;
+    private javax.swing.JRadioButton rdbMateriaPrima;
+    private javax.swing.JRadioButton rdbProducaoPropria;
+    private javax.swing.JTextField txtCodigoBarra;
+    private javax.swing.JTextField txtCodigoFabricante;
+    private javax.swing.JTextField txtDescricao;
+    private javax.swing.JTextField txtLocalizacaoProduto;
+    private javax.swing.JTextField txtNumeroSerie;
+    private javax.swing.JTextField txtPesoBruto;
+    private javax.swing.JTextField txtPesoLiquido;
+    private javax.swing.JTextField txtPesoM;
+    private javax.swing.JTextField txtUltimaCompra;
+    private javax.swing.JTextField txtUltimaVenda;
+    private javax.swing.JTextField txtUnidade;
     // End of variables declaration//GEN-END:variables
 
 }
