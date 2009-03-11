@@ -265,13 +265,13 @@ public class MenuInicial extends javax.swing.JFrame {
     }//GEN-LAST:event_mitemSairActionPerformed
 
     private void mitemClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitemClientesActionPerformed
-        FrameCadastroCliente fc = new FrameCadastroCliente();
+        NewFrameCadastroCliente fc = new NewFrameCadastroCliente();
         desktop.add(fc);
         fc.setVisible(true);
     }//GEN-LAST:event_mitemClientesActionPerformed
 
     private void mitemFornecedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitemFornecedoresActionPerformed
-        FrameCadastroFornecedor fc = new FrameCadastroFornecedor();
+        NewFrameCadastroFornecedor fc = new NewFrameCadastroFornecedor();
         desktop.add(fc);
         fc.setVisible(true);
     }//GEN-LAST:event_mitemFornecedoresActionPerformed
