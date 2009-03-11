@@ -125,6 +125,11 @@ public class MenuInicial extends javax.swing.JFrame {
         menuCadastro.add(mitemFornecedores);
 
         mitemProdutos.setText("Produtos");
+        mitemProdutos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mitemProdutosActionPerformed(evt);
+            }
+        });
         menuCadastro.add(mitemProdutos);
         menuCadastro.add(jSeparator1);
 
@@ -275,6 +280,12 @@ public class MenuInicial extends javax.swing.JFrame {
         desktop.add(fc);
         fc.setVisible(true);
     }//GEN-LAST:event_mitemFornecedoresActionPerformed
+
+    private void mitemProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mitemProdutosActionPerformed
+        FrameCadastroProduto fc = new FrameCadastroProduto();
+        desktop.add(fc);
+        fc.setVisible(true);
+    }//GEN-LAST:event_mitemProdutosActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {

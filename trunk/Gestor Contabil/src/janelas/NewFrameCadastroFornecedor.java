@@ -60,6 +60,9 @@ public class NewFrameCadastroFornecedor extends javax.swing.JInternalFrame {
         lblHomepage = new javax.swing.JLabel();
         txtHomepage1 = new javax.swing.JTextField();
 
+        setClosable(true);
+        setTitle("Cadastro de Fornecedor - Gestor Contábil");
+
         lblDadosEmpresa.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         lblDadosEmpresa.setText("Dados da Empresa");
 
