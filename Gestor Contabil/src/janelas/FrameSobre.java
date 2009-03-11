@@ -83,7 +83,7 @@ public class FrameSobre extends ModalInternalFrame {
                     .addComponent(lblEmpresa))
                 .addGap(43, 43, 43)
                 .addComponent(btnOK)
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         pack();
@@ -92,6 +92,7 @@ public class FrameSobre extends ModalInternalFrame {
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
         dispose();
     }//GEN-LAST:event_btnOKActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnOK;
     private javax.swing.JLabel lblEmpresa;
