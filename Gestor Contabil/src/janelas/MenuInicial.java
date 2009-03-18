@@ -2,7 +2,7 @@ package janelas;
 
 import boleto.org.jboleto.JBoleto;
 import boleto.org.jboleto.JBoletoBean;
-import boleto.org.jboleto.bancos.Itau;
+import boleto.org.jboleto.bancos.CaixaEconomica;
 import boleto.org.jboleto.control.PDFGenerator;
 import java.awt.Color;
 import java.awt.Desktop;
@@ -236,9 +236,9 @@ public class MenuInicial extends javax.swing.JFrame {
         Vector descr = new Vector();
         descr.add("gfdg");
         jbean.setDescricoes(descr);
-        PDFGenerator pdf = new PDFGenerator(jbean, JBoleto.BANCO_DO_BRASIL);
-        pdf.addBoleto(jbean, new Itau(jbean));
-        JBoleto jbol = new JBoleto(pdf, jbean, JBoleto.BANCO_DO_BRASIL);
+        PDFGenerator pdf = new PDFGenerator(jbean, JBoleto.CAIXA_ECONOMICA);
+        pdf.addBoleto(jbean, new CaixaEconomica(jbean));
+        JBoleto jbol = new JBoleto(pdf, jbean, JBoleto.CAIXA_ECONOMICA);
         jbol.closeBoleto("c:/caixa.pdf");
         try {
             File arq = new File("c:/caixa.pdf");
