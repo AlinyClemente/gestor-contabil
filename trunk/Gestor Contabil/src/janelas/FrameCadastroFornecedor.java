@@ -7,7 +7,7 @@ import componentes.FormattedTextCPF;
  *
  * @author Andre Luis
  */
-public class FrameCadastroFornecedor extends javax.swing.JInternalFrame {
+public class FrameCadastroFornecedor extends ModalInternalFrame {
 
     /** Creates new form NewFrameCadastroFornecedor */
     public FrameCadastroFornecedor() {
