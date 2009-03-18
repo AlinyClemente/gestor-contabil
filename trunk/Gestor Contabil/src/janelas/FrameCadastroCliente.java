@@ -4,10 +4,10 @@ package janelas;
  *
  * @author Andre Luis
  */
-public class NewFrameCadastroCliente extends javax.swing.JInternalFrame {
+public class FrameCadastroCliente extends javax.swing.JInternalFrame {
 
     /** Creates new form NewFrameCadastroCliente */
-    public NewFrameCadastroCliente() {
+    public FrameCadastroCliente() {
         initComponents();
     }
 
