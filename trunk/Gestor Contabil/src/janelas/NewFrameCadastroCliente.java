@@ -1,14 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * NewFrameCadastroCliente.java
- *
- * Created on 11/03/2009, 10:57:32
- */
-
 package janelas;
 
 /**
