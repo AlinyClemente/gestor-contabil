@@ -23,6 +23,7 @@ public class FrameCadastroFornecedor extends ModalInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         lblDadosEmpresa = new javax.swing.JLabel();
         lblCodigoEmpresa = new javax.swing.JLabel();
         ftxtCodigoEmpresa = new componentes.FormattedTextNumero();
@@ -63,13 +64,13 @@ public class FrameCadastroFornecedor extends ModalInternalFrame {
         setClosable(true);
         setTitle("Cadastro de Fornecedor - Gestor Contábil");
 
-        lblDadosEmpresa.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblDadosEmpresa.setFont(new java.awt.Font("Dialog", 1, 14));
         lblDadosEmpresa.setText("Dados da Empresa");
 
-        lblCodigoEmpresa.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblCodigoEmpresa.setFont(new java.awt.Font("Dialog", 1, 11));
         lblCodigoEmpresa.setText("Código da Empresa:");
 
-        lblClassificacao.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        lblClassificacao.setFont(new java.awt.Font("Dialog", 1, 12));
         lblClassificacao.setText("Classificação");
 
         rdbJurifica.setText("Jurídica");
@@ -96,49 +97,49 @@ public class FrameCadastroFornecedor extends ModalInternalFrame {
             }
         });
 
-        lblInscricaoEstadual.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblInscricaoEstadual.setFont(new java.awt.Font("Dialog", 1, 11));
         lblInscricaoEstadual.setText("Inscrição Estadual");
 
-        lblRazaoSocial.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblRazaoSocial.setFont(new java.awt.Font("Dialog", 1, 11));
         lblRazaoSocial.setText("Razão Social");
 
-        lblNomeFantasia.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblNomeFantasia.setFont(new java.awt.Font("Dialog", 1, 11));
         lblNomeFantasia.setText("Nome Fantasia");
 
-        lblEnderecoEmpresa.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblEnderecoEmpresa.setFont(new java.awt.Font("Dialog", 1, 14));
         lblEnderecoEmpresa.setText("Endereço da Empresa");
 
-        lblEndereco.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblEndereco.setFont(new java.awt.Font("Dialog", 1, 11));
         lblEndereco.setText("Endereço");
 
-        lblBairro.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblBairro.setFont(new java.awt.Font("Dialog", 1, 11));
         lblBairro.setText("Bairro");
 
-        lblCEP.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblCEP.setFont(new java.awt.Font("Dialog", 1, 11));
         lblCEP.setText("CEP");
 
-        lblEstado.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblEstado.setFont(new java.awt.Font("Dialog", 1, 11));
         lblEstado.setText("Estado");
 
-        lblEstado1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblEstado1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblEstado1.setText("Cidade");
 
-        lblDadosContato.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblDadosContato.setFont(new java.awt.Font("Dialog", 1, 14));
         lblDadosContato.setText("Dados de Contato da Empresa");
 
-        lblTelefone.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblTelefone.setFont(new java.awt.Font("Dialog", 1, 11));
         lblTelefone.setText("Telefone");
 
-        lblTelefone3.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblTelefone3.setFont(new java.awt.Font("Dialog", 1, 11));
         lblTelefone3.setText("Celular");
 
-        lblTelefone1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblTelefone1.setFont(new java.awt.Font("Dialog", 1, 11));
         lblTelefone1.setText("Fax");
 
-        lblTelefone2.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblTelefone2.setFont(new java.awt.Font("Dialog", 1, 11));
         lblTelefone2.setText("E-mail");
 
-        lblHomepage.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lblHomepage.setFont(new java.awt.Font("Dialog", 1, 11));
         lblHomepage.setText("Homepage:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -297,7 +298,7 @@ public class FrameCadastroFornecedor extends ModalInternalFrame {
                         .addComponent(lblHomepage)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtHomepage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
         pack();
@@ -340,6 +341,7 @@ public class FrameCadastroFornecedor extends ModalInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox cmbCidade;
     private javax.swing.JComboBox cmbEstado;
     private componentes.FormattedTextEmail formattedTextEmail1;
