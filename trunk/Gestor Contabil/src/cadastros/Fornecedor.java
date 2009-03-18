@@ -29,7 +29,7 @@ public class Fornecedor {
 
     public Fornecedor(int codigo, String registro, String endereco, String bairro,
             String cep, String estado, String cidade, String email, String homePage,
-            String razaoSocial, String nomeFantasia, String[]telefones) {
+            String razaoSocial, String nomeFantasia, String[] telefones) {
         this.codigo = codigo;
         this.registro = registro;
         this.endereco = endereco;
@@ -41,7 +41,7 @@ public class Fornecedor {
         this.homePage = homePage;
         this.razaoSocial = razaoSocial;
         this.nomeFantasia = nomeFantasia;
-        this.telefones=telefones;
+        this.telefones = telefones;
     }
 
     public String getBairro() {
@@ -138,5 +138,19 @@ public class Fornecedor {
 
     public void setTelefones(String[] telefones) {
         this.telefones = telefones;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Fornecedor other = (Fornecedor) obj;
+        if (this.codigo != other.codigo) {
+            return false;
+        }
+        return true;
     }
 }

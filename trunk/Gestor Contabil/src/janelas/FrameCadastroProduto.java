@@ -20,6 +20,11 @@ public class FrameCadastroProduto extends ModalInternalFrame {
     /** Creates new form FrameCadastroProduto */
     public FrameCadastroProduto() {
         initComponents();
+        buttonGroup1.add(rdbAtivo);
+        buttonGroup1.add(rdbInativo);
+        buttonGroup2.add(rdbDiversos);
+        buttonGroup2.add(rdbMateriaPrima);
+        buttonGroup2.add(rdbProducaoPropria);
     }
 
     /** This method is called from within the constructor to
@@ -31,6 +36,8 @@ public class FrameCadastroProduto extends ModalInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         lblStatusProduto = new javax.swing.JLabel();
         rdbAtivo = new javax.swing.JRadioButton();
         rdbInativo = new javax.swing.JRadioButton();
@@ -259,7 +266,7 @@ public class FrameCadastroProduto extends ModalInternalFrame {
                                     .addComponent(lblUltimaVenda)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(txtUltimaVenda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(123, Short.MAX_VALUE))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
 
         pack();
@@ -267,6 +274,8 @@ public class FrameCadastroProduto extends ModalInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private componentes.FormattedTextNumero ftxtCodigoProduto;
     private javax.swing.JLabel lblCodigoBarra;
     private javax.swing.JLabel lblCodigoFabricante;
