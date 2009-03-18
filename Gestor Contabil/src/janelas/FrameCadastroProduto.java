@@ -15,7 +15,7 @@ package janelas;
  *
  * @author Andre Luis
  */
-public class FrameCadastroProduto extends javax.swing.JInternalFrame {
+public class FrameCadastroProduto extends ModalInternalFrame {
 
     /** Creates new form FrameCadastroProduto */
     public FrameCadastroProduto() {
